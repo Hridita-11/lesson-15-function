@@ -1,0 +1,24 @@
+def add(p,q):
+    return p+q
+def subtract(p,q):
+    return p-q
+def multiply(p,q):
+    return(p*q)
+def divide (p,q):
+    return p/q
+print("PLease select the operation:")
+print("1.addition")
+print("2.subtact")
+print("3.multiply")
+print("divide")
+choice= input("Please enter your choice(a/b/c/d):")
+num_1=int(input("Please enter the first number :"))
+num_2=int(input("Please enter your second number:"))
+if choice=="a":
+    print(num_1,"+",num_2,"=" ,add(num_1,num_2))
+elif choice=="b":
+    print(num_1,"-",num_2,"=",subtract(num_1,num_2))
+elif choice=="c":
+    print(num_1,"*",num_2,"=",multiply(num_1,num_2))
+elif choice=="d":
+    print(num_1,"/",num_2,"=",divide(num_1/num_2))
